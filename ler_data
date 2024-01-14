@@ -1,0 +1,28 @@
+def ler_data(data):
+  """
+  Lê uma data no formato ddmmaa e retorna os seus campos separados.
+
+  Args:
+    data: A data a ser lida.
+
+  Returns:
+    Uma tupla contendo o dia, o mês e o ano da data.
+  """
+
+  # Separa os campos da data.
+  dia, mes, ano = data[:2], data[2:4], data[4:]
+
+  # Retorna os campos da data.
+  return dia, mes, ano
+
+
+# Entrada da data
+data = input("Digite uma data no formato ddmmaa: ")
+
+# Leitura da data
+dia, mes, ano = ler_data(data)
+
+# Impressão dos campos da data
+print("Dia:", dia)
+print("Mês:", mes)
+print("Ano:", ano)
